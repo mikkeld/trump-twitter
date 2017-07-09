@@ -1,0 +1,336 @@
+body {
+	font-family: 'Mukta Vaani', sans-serif;
+	background-color: #fbfeff;
+	padding-bottom: 30px;
+}
+
+label {
+	display: inline-block;
+}
+
+.strikethrough {
+	text-decoration: line-through;
+}
+
+.center {
+	text-align: center;
+}
+
+.right {
+	text-align: right;
+}
+
+.no-top-margin {
+	margin-top: 0;
+}
+
+.no-bottom-margin {
+	margin-bottom: 0;
+}
+
+.pointer {
+	cursor: pointer;
+}
+
+/* NAVBAR STYLES  ******************************* */
+
+.navbar {
+	border-radius: 0;
+	border-bottom: 3px solid red;
+	background: #424343;
+}
+
+.navbar-header a.navbar-brand {
+	color: white;
+}
+
+.navbar-header a.navbar-brand span {
+	color: red;
+}
+
+.navbar form .btn {
+	margin-right: 20px;
+}
+
+/* END NAVBAR STYLES ******************************* */
+
+
+/* HIGHLIGHTS PAGE STYLES ******************************* */
+
+#highlights {
+	margin-top: 60px;
+}
+
+#highlights-left {
+	border-right: 2px solid gray;
+}
+
+#highlights-left h2 {
+  display: inline-block;
+}
+
+#highlights-left a {
+  color: black;
+}
+
+#highlights-left .link-highlight a {
+  color: #d30000;
+}
+
+#highlights-right a {
+  color: #e41c1c;
+}
+
+#highlights-right .new-section {
+	margin-top: 70px;
+	margin-bottom: 30px;
+}
+
+.quote-list ol li {
+	margin-bottom: 3px;
+}
+
+/* END HIGHLIGHTS PAGE ******************************* */
+
+
+
+/* ABOUT PAGE STYLES ******************************* */
+
+#about h4 {
+	margin-top: 30px;
+	text-decoration: underline;
+	line-height: 24px;
+}
+
+/* END ABOUT PAGE STYLES ******************************* */
+
+
+/* ARCHIVE PAGE STYLES ******************************* */
+
+#archive {
+	margin-top: 80px;
+}
+
+#search-bar #sizing-addon1 {
+	min-width: 78px;
+}
+
+#search-bar #sizing-addon1.pointer:hover {
+	color: #5252f1;
+	text-decoration: underline;
+}
+
+#search-bar .input-group-btn button {
+	border-radius: 0;
+	border-left: 0;
+	border-right: 1px solid #cccccc;
+	background: #eeeeee;
+}
+
+#search-bar .dropdown-menu span {
+  min-width: 100px;
+  display: inline-block;
+	border-right: 1px solid grey;
+	margin-right: 7px;
+}
+
+#control-bar {
+	margin: 10px 0;
+	text-align: center;
+}
+
+#control-buttons, #control-dates, #control-selects {
+	display: inline-block;
+	margin: 0 5px;
+}
+
+#control-bar .dropdown {
+	display: inline-block;
+}
+
+#control-bar .dropdown li {
+	min-width: 180px;
+  margin: 3px;
+}
+
+#control-bar .dropdown input {
+  margin: 0 6px;
+}
+
+#control-bar button, #control-bar select, #control-dates input {
+	height: 38px;
+	margin: 0 2px;
+}
+
+#control-bar select, #control-dates input {
+	height: 38px;
+	margin: 0 2px;
+	min-width: 100px;
+	max-width: 200px;
+}
+
+#fixed {
+	height: 96vh;
+	overflow: auto;
+	margin: 0;
+	margin-top: 20px;
+	padding-bottom: 100px;
+}
+
+#fixed li {
+	padding: 4px 0 1px 0;
+	font-size: 12px;
+  letter-spacing: 0.3px;
+}
+
+#fixed button.btn-xs {
+	font-size: 10px;
+	color: black;
+	background: #e4e4e4;
+}
+
+.highlighted {
+	background-color: yellow;
+}
+
+span.tweet-date {
+  width: 170px;
+  display: inline-block;
+  padding-left: 10px;
+}
+
+span.tweet-source {
+  color: gray;
+}
+
+#loading-icon {
+	position: absolute;
+	right: 10px;
+}
+
+#loaded-dates {
+	position: absolute;
+	display: inline-block;
+	top: 150px;
+	right: 10px;
+	padding: 5px;
+	z-index: 10;
+	background-color: #424343;
+	color: #dfdbdb;
+}
+
+#loaded-dates button {
+	width: 100%;
+}
+
+#loaded-dates .date {
+	display: block;
+	padding: 5px;
+}
+
+#loaded-dates .date span {
+	float: right;
+	padding-left: 5px;
+}
+
+.mark-loading {
+	color: #286090;
+}
+
+.mark-failure {
+	color: #ff5d5d;
+}
+
+.mark-success {
+	color: green;
+}
+
+/* END ARCHIVE PAGE STYLES ******************************* */
+
+
+/* COLLECTION PAGE STYLES ******************************* */
+
+#tweet-panel {
+	padding-top: 50px;
+}
+
+#tweet-panel h2 {
+	text-align: center;
+	text-decoration: underline;
+}
+
+#tweet-panel .embedded-tweet {
+	width: 33%;
+	display: inline-flex;
+}
+
+/* END COLLECTION PAGE STYLES ******************************* */
+
+
+/* ALL ACCOUNTS PAGE STYLES ******************************* */
+
+#all-accounts {
+	padding-top: 80px;
+}
+
+#all-accounts .row {
+	padding: 6px 0;
+}
+
+#all-accounts .row:nth-child(odd) {
+  background: #ececec;
+}
+
+#all-accounts .row:hover {
+    background: #ff9393;
+}
+
+/* END ALL ACCOUNTS PAGE STYLES ******************************* */
+
+
+/* DEVICE WIDTH RULES ******************************* */
+
+@media (max-width: 1170px) {
+	.navbar-header .navbar-text {
+		display: none;
+	}
+	span.tweet-date {
+		font-size: inherit;
+    text-decoration: underline;
+    width: inherit;
+    display: inline;
+	}
+	#control-selects {
+		display: none;
+	}
+	#highlights-left {
+		border-right: 0;
+	}
+}
+
+@media (max-width: 800px) {
+	.input-group-btn, #sizing-addon2, #control-dates {
+		display: none;
+	}
+	#tweet-panel .embedded-tweet {
+		width: 49%;
+	}
+}
+
+@media (max-width: 700px) {
+	#highlights {
+		margin-top: 80px;
+	}
+	#highlights .col-md-12.right {
+		display: none;
+	}
+}
+
+@media (max-width: 600px) {
+	#tweet-panel .embedded-tweet {
+		width: 100%;
+	}
+	#control-buttons button {
+    min-width: 50px;
+	}
+}
